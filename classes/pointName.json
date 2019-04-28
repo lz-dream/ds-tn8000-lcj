@@ -1,0 +1,10 @@
+ [
+		{
+			"pointName": "有功功率",
+			"commSequence": "1_1"
+		},
+		{
+			"pointName": "无功功率",
+			"commSequence": "1_2"
+		}
+	]

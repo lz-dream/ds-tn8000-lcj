@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for huake_tcp_ds_lcj" enabled="true">
+        <sourceOutputDir name="maven-target/generated-sources/annotations" />
+        <sourceTestOutputDir name="maven-target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ds-tn8000-lcj" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ds-tn8000-lcj" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

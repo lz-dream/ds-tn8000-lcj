@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.oge.kdm.link.modules</groupId>
+        <artifactId>modules-parent</artifactId>
+		<version>3.4.5</version>
+		<relativePath>/</relativePath>
+	</parent>
+
+	<artifactId>ds-tn8000-lcj</artifactId>
+	<name>huake_tcp_ds_lcj</name>
+	<version>1.0.1</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.gmavenplus</groupId>
+				<artifactId>gmavenplus-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jspc-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.9.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.oge.kdm.common</groupId>
+			<artifactId>kdm-common-wave</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.18</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>kdm</id>
+			<url>http://mvn.orientge.cn:2080/content/groups/kdm</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>kdm</id>
+			<url>http://mvn.orientge.cn:2080/content/groups/kdm</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>oge</id>
+			<url>http://mvn.orientge.cn:2080/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>oge</id>
+			<url>http://mvn.orientge.cn:2080/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
