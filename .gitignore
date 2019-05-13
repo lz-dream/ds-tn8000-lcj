@@ -5,7 +5,7 @@
 
 # Maven
 *.versionsBackup
-
+**/maven-target/
 # Eclipse
 .project
 .classpath
