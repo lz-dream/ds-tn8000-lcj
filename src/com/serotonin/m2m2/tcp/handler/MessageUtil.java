@@ -115,7 +115,7 @@ public class MessageUtil {
             // ex.printStackTrace();
         }
 
-        //解析增补测点912个
+        //解析增补测点1002个
         count.set(51);
         for (int i = 0; i < 1002; i++) {
             DataPointRT pointRT = mapPointRT.get(key + "_" + count.getAndIncrement());

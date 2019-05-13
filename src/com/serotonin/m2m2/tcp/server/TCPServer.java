@@ -29,7 +29,7 @@ public class TCPServer implements Runnable {
 	private static final int LENGTH_FIELD_LENGTH = 4;
 	private static final int LENGTH_ADJUSTMENT = 0;
 	private static final int INITIAL_BYTES_TO_STRIP = 0;
-	private static final int MAX_FRAME_LENGTH = 470000;// 最大允许的长度
+	private static final int MAX_FRAME_LENGTH = 480000;// 最大允许的长度
 	private ServerBootstrap tcpBootstrap = new ServerBootstrap();
 	private TCPConfig tcpConfig;
 	private List<DataPointRT> dataPointRTs;
